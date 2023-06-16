@@ -2,7 +2,7 @@
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
     --building-color3: #cc6699;
-
+    --building-color4: #538cc6;
 }
 
 * {
@@ -59,7 +59,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--building-color2, green);
+    background-color: var(--building-color2);
 }
 
 .bb3 {
@@ -68,7 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--building-color3, pink);
+    background-color: var(--building-color3);
 }
 
 .bb4 {
@@ -77,4 +77,5 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--building-color4);
 }
