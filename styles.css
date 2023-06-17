@@ -10,7 +10,6 @@
 }
 
 * {
-    border: 1px solid black;
     box-sizing: border-box;
 }
 
@@ -18,6 +17,16 @@ body {
     height: 100vh;
     margin: 0px;
     overflow: hidden;
+}
+
+.sky {
+    background: radial-gradient(
+        circle closest-corner at 15% 15%,
+        #ffcf33 0%,
+        #ffcf33 20%,
+        #ffff66 21%,
+        #bbeeff 100%
+        );
 }
 
 .background-buildings, .foreground-buildings {
@@ -225,13 +234,38 @@ body {
     right: 10%;
     width: 10%;
     height: 33%;
-    background-color: var(--building-color2);
+    background: repeating-linear-gradient(var(--building-color2) 0%, var(--building-color2) 5%, transparent 5%, transparent 10%),
+    repeating-linear-gradient(90deg, var(--building-color2) 0%, var(--building-color2) 12%, var(--window-color2) 12%, var(--window-color2) 44%);
 }
 
 
 .fb6 {
     width: 9%;
     height: 38%;
-    background-color: var(--building-color3);
+    background: repeating-linear-gradient(90deg, var(--building-color3) 0%, var(--building-color3) 10%, transparent 10%, transparent 30%),
+    repeating-linear-gradient(var(--building-color3) 0%, var(--building-color3) 10%, var(--window-color3) 10%, var(--window-color3) 30%);
+}
+
+@media (max-width: 1000px) {
+    
+    :root {
+        --building-color1: #000;
+        --building-color2: #000;
+        --building-color3: #000;
+        --building-color4: #000;
+        --window-color1: #777;
+        --window-color2: #777;
+        --window-color3: #777;
+        --window-color4: #777;
+    }
+    .sky {
+        background: radial-gradient(
+            circle closest-corner at 15% 15%,
+            #ccc 0%,
+            #ccc 20%,
+            #445 21%,
+            #223 100%
+            );
+    }
 }
 
