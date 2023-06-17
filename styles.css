@@ -263,7 +263,7 @@ body {
             circle closest-corner at 15% 15%,
             #ccc 0%,
             #ccc 20%,
-            #445 21%,
+            rgb(104, 104, 131) 21%,
             #223 100%
             );
     }
